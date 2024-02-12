@@ -1,0 +1,10 @@
+.click_link{
+    width: auto;
+    height:auto;
+    cursor: pointer;
+}
+.rock{
+    width: 50%;
+    height: 100vh;
+    cursor:progress ;
+}
