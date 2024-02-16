@@ -199,16 +199,19 @@
         color: white;
         border: none;
         padding: 5px 10px 5px 10px;
-        transition: padding 0.4s;
+        transition: all 0.4s;
+        margin-left: 20px;
     }
     .stretch:hover{
-        padding: 10px 15px 10px 15px;
+        padding: 5px 15px 5px 15px;
+        margin-left: 15px;
     }
     .shadow{
         box-shadow: 2.55px 2.55px 1px rgba(0, 0, 0, 0.247);
         background-color: green;
         color: white;
-        border: none;
+        border-width: 0.26px;
+        border-color: green;
         cursor: pointer;
         padding: 3px 5px 3px 5px;
         transition: all 0.15s;
@@ -216,6 +219,13 @@
     .shadow:active{
         margin: 2.55px 0px 0px 2.55px;
         box-shadow: 0px 0px 0px;
+    }
+    .shadow:hover{
+        color: green;
+        background-color: white;
+        border-radius: 1px;
+        border-color: green;
+        border-width: 0.26px;
     }
     
 </style>
@@ -251,8 +261,9 @@
         <button class="next">Next</button>
         <p>stretch</p>
         <button class="stretch">stretch</button>
+        <button class="stretch">stretch</button>
         <p> 3d click</p>
         <button class="shadow"> shadow</button>
-        
+
     </body>
 </html>
