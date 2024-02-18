@@ -1,0 +1,150 @@
+.container{
+    background-color: antiquewhite;
+    margin-top: 80px ;
+    margin-left: 500px;
+    height:590px;
+    width: 500px;
+    border-radius: 30px;
+}
+#RPC{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.playerscore{
+    background-color: rgb(149, 201, 246);
+    margin-top: 10px;
+    height: 80px;
+    width: 150px;
+    margin-left: 167px;
+    border-radius: 20px;
+
+}
+.computerscore{
+    background-color: rgb(100, 243, 231);
+    height: 100px;
+    width: 150px;
+    margin-top: 0px;
+    margin-left: 167px;
+    border-radius: 20px;
+}
+#psh3{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+#csh3{
+    margin-left: 20px;
+    margin-top: 20px;
+
+
+}
+#score{
+    margin-left: 65px;
+
+}
+#cs_score{
+    margin-left: 65px;
+
+}
+
+.player{
+    background-color: rgb(255, 189, 108);
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 400px;
+    border-radius: 30px;
+}
+#pl{
+    margin-left: 160px;
+}
+#rockbtn{
+    margin-left: 40px;
+    height:40px ;
+    width: 80px;
+    background-color:rgb(255, 66, 66) ;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+#rockbtn:hover{
+    background-color: red;
+}
+#paperbtn{
+    margin-left: 30px;
+    height:40px ;
+    width: 80px;
+    background-color:rgb(52, 244, 154) ;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+#paperbtn:hover{
+    background-color: rgb(30, 251, 30);
+}
+#scissorbtn{
+    margin-left: 30px;
+    height:40px ;
+    width: 80px;
+    background-color:rgb(53, 144, 255) ;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+
+}
+#scissorbtn:hover{
+    background-color: blue;
+}
+
+.computer{
+    background-color: rgb(165, 81, 255);
+    height: 80px;
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 400px;
+    border-radius: 30px;
+
+
+}
+#comh3{
+    margin-left: 150px;
+
+}
+#computerlabl{
+    margin-left: 150px;
+
+
+}
+
+#quit{
+    margin-top: 10px;
+    margin-left: 209px;
+    height: 40px;
+    width: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 4);
+    color: white;
+    cursor: pointer;
+
+}
+#quit:hover{
+    background-color: red;
+}
+#computerlabl{
+    margin-left:165px;
+}
+#end_lbl{
+    margin-left: 212px;
+    margin-top: 50px;
+
+}
+
+body{
+    background-color: rgb(255, 203, 126);
+}
