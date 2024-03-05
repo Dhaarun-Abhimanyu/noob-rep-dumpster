@@ -6,7 +6,7 @@ int main(){
     scanf("%s",name);
     printf("Surname : ");
     scanf("%s",surname);
-    printf("Year if birth : ");
+    printf("Year of birth : ");
     scanf("%d",&date);
     printf("%s %s %d",name,surname,date);
     return 0;
