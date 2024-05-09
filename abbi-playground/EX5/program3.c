@@ -12,33 +12,28 @@ void main()
     printf("Enter the search word: ");
     gets(search);
 
-    int pointer = 0;
-    while (pointer < strlen(str)) {
-        if (str[pointer] == search[0]) {
-            start = pointer;
-            end = pointer;
-            int j;
-            for (j = 0; j < strlen(search); j++) {
-                if (search[j] == str[pointer + j]) {
-                    end++;
-                } else {
-                    break;
-                }
-            }
-            if (j == strlen(search)) {
-                pointer = end;
+    int search_len = strlen(search);
+    int str_len = strlen(str);
+    int new_str_index = 0;
+    int i = 0;
+
+    while (i < str_len) {
+        int match = 1;
+        for (int j = 0; j < search_len; j++) {
+            if (str[i + j] != search[j]) {
+                match = 0;
+                break;
             }
         }
-        pointer++;
-    }
-    int index = 0;
-    for (int i = 0; i < strlen(str); i++) {
-        if (i < start || i >= end) {
-            new_str[index++] = str[i];
+        if (match) {
+            i += search_len; // Skip the matched word
+        } else {
+            new_str[new_str_index++] = str[i++];
         }
     }
-    new_str[index] = '\0';
-    printf("\nModified string: %s\n", new_str);
+    new_str[new_str_index] = '\0';
+
+    printf("Modified string: %s\n", new_str);
 }
 
 //Enter the string: who are you?
