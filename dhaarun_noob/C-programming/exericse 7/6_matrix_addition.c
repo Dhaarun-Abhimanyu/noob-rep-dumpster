@@ -2,9 +2,8 @@
 #include <stdlib.h>
 int** mat_add(int** a,int** b,int row,int col){
     int **ret = (int**)malloc(row*sizeof(int*));
-    for(int i=0;i<col;i++)
+    for(int i=0;i<row;i++){
         ret[i] = (int*)malloc(col*sizeof(int));
-    for(int i=0;i<col;i++){
         for(int j=0;j<col;j++)
             ret[i][j] = a[i][j] + b[i][j];
     }
@@ -12,9 +11,8 @@ int** mat_add(int** a,int** b,int row,int col){
 }
 void display(int** a,int row,int col){
     for(int i=0;i<row;i++){
-        for(int j=0;j<col;j++){
+        for(int j=0;j<col;j++)
             printf("%d ",a[i][j]);
-        }
         printf("\n");
     }
 }
@@ -29,7 +27,7 @@ int main(){
     printf("\nEnter number of rows and columns : ");
     scanf("%d,%d",&m,&n);
     int **a = (int**)malloc(m*sizeof(int*)),**b = (int**)malloc(m*sizeof(int*));
-    for(int i=0;i<n;i++){
+    for(int i=0;i<m;i++){
         a[i] = (int*)malloc(n*sizeof(int));
         b[i] = (int*)malloc(n*sizeof(int));
     }
