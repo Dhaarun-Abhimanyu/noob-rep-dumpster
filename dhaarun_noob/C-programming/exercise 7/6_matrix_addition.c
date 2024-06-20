@@ -31,10 +31,15 @@ int main(){
         a[i] = (int*)malloc(n*sizeof(int));
         b[i] = (int*)malloc(n*sizeof(int));
     }
-    printf("\nEnter %d elements for Array 1:\n",m*n);
-    input(m,n,a);
-    printf("\nEnter %d elements for Array 2:\n",m*n);
-    input(m,n,b);
+    int ***in = (int***)malloc(2*sizeof(int**));
+    in[0] = (int**)malloc(m*sizeof(int*));
+    in[0] = a;
+    in[1] = (int**)malloc(m*sizeof(int*));
+    in[1] = b;
+    for(int i=0;i<2;i++){
+        printf("\nEnter %d elements Array %d",m*n,i+1);
+        input(m,n,*(in+i));
+    }
     printf("\nArray 1:\n");
     display(a,m,n);
     printf("\nArray 2:\n");
