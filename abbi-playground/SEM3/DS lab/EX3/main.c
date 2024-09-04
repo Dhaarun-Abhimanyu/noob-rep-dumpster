@@ -5,13 +5,14 @@ void main()
     int n;
     printf("Enter the size of the array: ");
     scanf("%d",&n);
-    printf("Enter the elements of the array: ")
+    printf("Enter the elements of the array: ");
     int arr[n];
     for (int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
 
     // anti-clockwise rotation
+    int num;
     printf("Enter the number of anticlockwise rotations: ");
     scanf("%d",&num);
     for (int i=0;i<num;i++){
@@ -23,21 +24,23 @@ void main()
     }
     printf("Rotated array: ");
     for (int i=0;i<n;i++){
-        printf("%d",arr[i]);
+        printf("%d,",arr[i]);
     }
+    printf("\n\n");
 
     // insertion
-    int ind,num;
+    int ind,num1;
     printf("Enter the number to insert and index: ");
-    scanf("%d,%d",&num,&ind);
+    scanf("%d,%d",&num1,&ind);
     for (int i=n-1;i>=ind;i--){
         arr[i+1] = arr[i];
     }
-    arr[ind] = num;
+    arr[ind] = num1;
     printf("Array after insertion: ");
     for (int i=0;i<n+1;i++){
         printf("%d,",arr[i]);
     }
+    printf("\n\n");
 
     // deletion
     int ind1;
