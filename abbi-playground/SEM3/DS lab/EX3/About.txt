@@ -1,1 +1,3 @@
 These are all various array operations
+
+** Make a file main.c and merge all the programs. All the operations should be done on a single array in a single file. **
